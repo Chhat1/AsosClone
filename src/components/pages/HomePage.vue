@@ -80,41 +80,97 @@ import { product } from "../../api/products";
     </div>
 
     <div class="shop-by-brand">
+  <div class="header">
+    <h1 class="font-bold text-2xl lg:px-10 lg:py-5 px-5 py-5">
+      Shop by brand
+    </h1>
+  </div>
 
-      <div class="header ">
-        <h1 class="font-bold text-2xl lg:px-10 lg:py-5 px-5 py-5">Shop by brand</h1>
-      </div>
+  <div class="overflow-hidden lg:w-[95%]  w-[89%] mx-auto">
+    <div class="flex w-max items-center gap-10 animate-marquee">
 
-    
-      <div class="logo overflow-x-auto">
-        <div class="flex gap-4 w-max lg:ml-3 ml-3">
-          
-          <img class="lg:h-50 h-30 cursor-pointer" src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/mango_v5.jpg">
-          <img class="lg:h-50 h-30 cursor-pointer" src="https://content.asos-media.com/-/media/homepages/ww/2025/september/22-mena-row-apac-ie/logo_abercrombie_870x500_resized_logo2.png">
-          <img class="lg:h-50 h-30 cursor-pointer" src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/huda-beauty_v2.jpg">
-          <img class="lg:h-50 h-30 cursor-pointer" src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/elf_v2.jpg">
-          <img class="lg:h-50 h-30 cursor-pointer" src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/new-balance_desktop_v2.jpg">
-          <img class="lg:h-50 h-30 cursor-pointer" src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/on-desktop.jpg">
-          <img class="lg:h-50 h-30 cursor-pointer" src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/huda-beauty_v2.jpg">
-          <img class="lg:h-50 h-30 cursor-pointer" src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/elf_v2.jpg">
-          <img class="lg:h-50 h-30 cursor-pointer" src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/new-balance_desktop_v2.jpg">
-          <img class="lg:h-50 h-30 cursor-pointer" src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/on-desktop.jpg">
-          <img class="lg:h-50 h-30 cursor-pointer" src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/huda-beauty_v2.jpg">
-          <img class="lg:h-50 h-30 cursor-pointer" src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/elf_v2.jpg">
-          <img class="lg:h-50 h-30 cursor-pointer" src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/new-balance_desktop_v2.jpg">
-          <img class="lg:h-50 h-30 cursor-pointer" src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/on-desktop.jpg">
+      <!-- Set 1 -->
+      <img
+        class="h-30 lg:h-50 shrink-0  cursor-pointer"
+        src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/mango_v5.jpg"
+      />
 
-        </div>
+      <img
+        class="h-30 lg:h-50 shrink-0  cursor-pointer"
+        src="https://content.asos-media.com/-/media/homepages/ww/2025/september/22-mena-row-apac-ie/logo_abercrombie_870x500_resized_logo2.png"
+      />
 
-      </div>
-      
+      <img
+        class="h-30 lg:h-50 shrink-0  cursor-pointer"
+        src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/huda-beauty_v2.jpg"
+      />
+
+      <img
+        class="h-30 lg:h-50 shrink-0  cursor-pointer"
+        src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/elf_v2.jpg"
+      />
+
+      <img
+        class="h-30 lg:h-50 shrink-0  cursor-pointer"
+        src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/new-balance_desktop_v2.jpg"
+      />
+
+      <img
+        class="h-30 lg:h-50 shrink-0  cursor-pointer"
+        src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/on-desktop.jpg"
+      />
+
+      <!-- Set 2 (Duplicate Exact Same Logos) -->
+      <img
+        class="h-30 lg:h-50 shrink-0  cursor-pointer"
+        src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/mango_v5.jpg"
+      />
+
+      <img
+        class="h-30 lg:h-50 shrink-0  cursor-pointer"
+        src="https://content.asos-media.com/-/media/homepages/ww/2025/september/22-mena-row-apac-ie/logo_abercrombie_870x500_resized_logo2.png"
+      />
+
+      <img
+        class="h-30 lg:h-50 shrink-0  cursor-pointer"
+        src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/huda-beauty_v2.jpg"
+      />
+
+      <img
+        class="h-30 lg:h-50 shrink-0  cursor-pointer"
+        src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/elf_v2.jpg"
+      />
+
+      <img
+        class="h-30 lg:h-50 shrink-0  cursor-pointer"
+        src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/new-balance_desktop_v2.jpg"
+      />
+
+      <img
+        class="h-30 lg:h-50 shrink-0  cursor-pointer"
+        src="https://content.asos-media.com/-/media/homepages/ww/2025/june/ww-eu-brand-logos/row-mena-au/on-desktop.jpg"
+      />
     </div>
+  </div>
+</div>
 
 
   </div>
 </template>
 
 
-<style scoped>
+<style>
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
 
+  to {
+    transform: translateX(calc(-50% - 20px));
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
 </style>
