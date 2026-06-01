@@ -9,7 +9,7 @@ import HomePage from './components/pages/HomePage.vue';
 <template>
     <div>
       <Navbar></Navbar>
-      <HomePage/>
+      <router-view/>
       <Footer/>
     </div>
 </template>
