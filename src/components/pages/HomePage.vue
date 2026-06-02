@@ -1,5 +1,5 @@
 <script setup>
-
+import { productMen } from "../../api/productmen";
 import { product } from "../../api/products";
 </script>
 
@@ -82,6 +82,78 @@ import { product } from "../../api/products";
       </div>
     </div>
 
+    <div class="Product-Men lg:py-10 lg:px-0  py-10">
+      <div class="header">
+        <h1 class="font-bold text-2xl lg:px-10 lg:py-5 px-5 py-5">
+          Product Mens
+        </h1>
+      </div>
+
+      <div
+        class="flex w-full gap-4 lg:py-4 lg:px-5 lg:ml-0 ml-5  overflow-x-auto scrollbar-hide snap-x"
+      >
+        <div
+          v-for="item in productMen"
+          :key="item.id"
+          class="lg:w-[16%] md:w-[48%] w-[48%] shrink-0 bg-white  border border-gray-200 hover:shadow-xl transition-all duration-300 group cursor-pointer overflow-hidden snap-start"
+        >
+          <div class="relative overflow-hidden h-64">
+            <img
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              :src="item.image"
+              :alt="item.title"
+            />
+            <div
+              class="absolute inset-0 lg:flex hidden items-center justify-center bg-black/10 backdrop-blur-[2px] opacity-0 transition-all duration-500 group-hover:opacity-100"
+            >
+              <router-link
+                to=""
+                class="flex items-center text-sm gap-2 bg-white text-gray-900 px-6 py-2 rounded-full font-semibold shadow-lg transform translate-y-4 transition-all duration-500 group-hover:translate-y-0 hover:bg-gray-100 hover:scale-105 active:scale-95"
+              >
+                View Details
+              </router-link>
+            </div>
+            <span
+              class="absolute top-3 left-3 bg-black text-white text-xs px-3 py-1 rounded-full"
+              >New</span
+            >
+          </div>
+
+          <div class="p-4">
+            <p class="text-xs text-gray-500 uppercase tracking-wide">
+              {{ item.category }}
+            </p>
+            <h3
+              class="font-semibold text-gray-800 mt-1 line-clamp-1 text-sm lg:text-base"
+            >
+              {{ item.title }}
+            </h3>
+            <p class="text-gray-500 lg:block hidden text-sm mt-2 line-clamp-2 h-10">
+              {{ item.des }}
+            </p>
+
+            <div class="lg:flex items-center  hidden gap-1 mt-3">
+              <span class="text-yellow-400">★★★★★</span>
+              <span class="text-sm text-gray-500"
+                >({{ item.rating || 4.8 }})</span
+              >
+            </div>
+
+            <div class="flex items-center justify-between mt-4">
+              <span class="font-bold text-lg text-black"
+                >${{ item.price }}</span
+              >
+              <button
+                class="bg-black cursor-pointer text-white px-4 py-2 rounded-lg text-sm hover:bg-gray-800 transition"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Shop by Brand -->
     <div class="shop-by-brand">
       <div class="header">
@@ -156,12 +228,6 @@ import { product } from "../../api/products";
         </div>
       </div>
     </div>
-
-
-   
-
-
-
   </div>
 </template>
 
@@ -179,5 +245,13 @@ import { product } from "../../api/products";
 
 .animate-marquee {
   animation: marquee 25s linear infinite;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 </style>

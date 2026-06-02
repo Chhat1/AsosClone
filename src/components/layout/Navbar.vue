@@ -68,7 +68,7 @@ const openSidebar = () => {
                 <li class="py-6">
                   <router-link
                     class="font-bold text-white text-base cursor-pointer hover:bg-white/10 py-6 px-6 transition-all ease-in-out duration-300"
-                    to=""
+                    to="/shopwomen"
                     >WOMEN</router-link
                   >
                 </li>
