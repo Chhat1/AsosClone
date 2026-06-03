@@ -52,11 +52,11 @@ import { product } from "../../api/products";
       <!-- header title -->
       <div class="flex justify-between items-center lg:py-5 lg:px-10 px-5 py-5">
         <h1 class="font-bold text-2xl">New In</h1>
-        <button
+        <router-link to="/shop"
           class="border border-gray-100 py-2 px-2 font-medium cursor-pointer hover:bg-black hover:text-white transition-all duration-500 ease-in-out"
         >
           SHOP NOW
-        </button>
+        </router-link>
       </div>
       <!-- main card -->
       <div

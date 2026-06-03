@@ -72,12 +72,12 @@
           </h3>
 
           <!-- Description -->
-          <p class="text-gray-500 text-sm mt-2 line-clamp-2 h-10">
+          <p class="text-gray-500 hidden text-sm mt-2 line-clamp-2 h-10">
             {{ item.des }}
           </p>
 
           <!-- Rating -->
-          <div class="flex items-center gap-1 mt-3">
+          <div class="lg:flex hidden items-center gap-1 mt-3">
             <span class="text-yellow-400">★★★★★</span>
             <span class="text-sm text-gray-500">
               ({{ item.rating || 4.8 }})

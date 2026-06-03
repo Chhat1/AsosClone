@@ -79,6 +79,7 @@ const openSidebar = () => {
                     >MEN</router-link
                   >
                 </li>
+                
               </ul>
             </div>
           </div>
@@ -167,6 +168,14 @@ const openSidebar = () => {
           class="flex items-center p-4 text-lg font-bold text-gray-700 hover:bg-gray-50 hover:text-gray-950 rounded-xl transition-all border-b border-gray-50"
         >
           MEN
+        </router-link>
+      </li>
+      <li>
+        <router-link
+          to="/shop"
+          class="flex items-center p-4 text-lg font-bold text-gray-700 hover:bg-gray-50 hover:text-gray-950 rounded-xl transition-all border-b border-gray-50"
+        >
+          SHOP
         </router-link>
       </li>
     </ul>

@@ -1,4 +1,5 @@
 <template>
+
   <!-- Product Men -->
   <div class="Product-Men lg:py-10 lg:px-0 py-10 px-5">
     <div class="header lg:mb-10 mb-9">
@@ -72,12 +73,12 @@
           </h3>
 
           <!-- Description -->
-          <p class="text-gray-500 text-sm mt-2 line-clamp-2 h-10">
+          <p class="text-gray-500 hidden text-sm mt-2 line-clamp-2 h-10">
             {{ item.des }}
           </p>
 
           <!-- Rating -->
-          <div class="flex items-center gap-1 mt-3">
+          <div class="lg:flex hidden items-center gap-1 mt-3">
             <span class="text-yellow-400">★★★★★</span>
             <span class="text-sm text-gray-500">
               ({{ item.rating || 4.8 }})
@@ -100,9 +101,17 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <script setup>
-import { productMen } from "../../api/productmen";
+import { onMounted } from "vue";
+import { productMen } from "../../api/productmen";import { useProductStore } from "../../stores/product";
+
+const productStore = useProductStore()
+
+onMounted(()=>{
+  productStore.getProductAll()
+})
 </script>
 
